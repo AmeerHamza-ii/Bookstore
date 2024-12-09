@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Stories",
+    "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/premium-vector/cartoon-style-stack-books-isolated-white-background_134830-605.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Stories",
+    "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/premium-vector/cartoon-style-stack-books-isolated-white-background_134830-605.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Stories",
+    "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/premium-vector/cartoon-style-stack-books-isolated-white-background_134830-605.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Stories",
+    "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/premium-vector/cartoon-style-stack-books-isolated-white-background_134830-605.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Stories",
+    "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/premium-vector/cartoon-style-stack-books-isolated-white-background_134830-605.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Stories",
+    "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/premium-vector/cartoon-style-stack-books-isolated-white-background_134830-605.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Stories",
+    "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/premium-vector/cartoon-style-stack-books-isolated-white-background_134830-605.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Stories",
+    "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/premium-vector/cartoon-style-stack-books-isolated-white-background_134830-605.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Stories",
+    "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/premium-vector/cartoon-style-stack-books-isolated-white-background_134830-605.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Stories",
+    "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/premium-vector/cartoon-style-stack-books-isolated-white-background_134830-605.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Stories",
+    "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/premium-vector/cartoon-style-stack-books-isolated-white-background_134830-605.jpg"
+  }
+]
