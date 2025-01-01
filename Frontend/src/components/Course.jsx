@@ -7,7 +7,7 @@ function Course() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/book");
+        const res = await axios.get(`${process.env.BACKEND_URL}/book`);
         setBook(res.data.filter((book) => book.category === "paid"));
       } catch (error) {
         console.log(error);
