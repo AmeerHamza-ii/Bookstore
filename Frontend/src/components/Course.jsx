@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import Cards from "./Cards";
 import axios from "axios";
 import { Link } from "react-router-dom";
+const backendUrl = import.meta.env.BACKEND_URL;
+
 function Course() {
   const [book, setBook] = useState([]);
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get(`${process.env.BACKEND_URL}/book`);
+        const res = await axios.get(`${backendUrl}/book`);
         setBook(res.data.filter((book) => book.category === "paid"));
       } catch (error) {
         console.log(error);
