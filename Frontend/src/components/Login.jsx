@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
-const backendUrl = import.meta.env.BACKEND_URL;
+import { BACKEND_URL } from "../config";
 
 function Login() {
   const {
@@ -17,7 +17,7 @@ function Login() {
       password: data.password,
     };
     await axios
-      .post(`${backendUrl}/user/login`, userInfo)
+      .post(`${BACKEND_URL}/user/login`, userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {

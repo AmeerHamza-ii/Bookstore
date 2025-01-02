@@ -1,9 +1,9 @@
-const backendUrl = import.meta.env.BACKEND_URL;
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Login from "./Login";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { BACKEND_URL } from "../config";
 function Signup() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ function Signup() {
       password: data.password,
     };
     await axios
-      .post(`${backendUrl}/user/signup`, userInfo)
+      .post(`${BACKEND_URL}/user/signup`, userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
