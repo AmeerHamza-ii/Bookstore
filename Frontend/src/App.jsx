@@ -7,7 +7,7 @@ import { Toaster } from "react-hot-toast";
 import { useAuth } from "./context/AuthProvider";
 
 function App() {
-  const [authUser] = useAuth(); // authUser ko context se fetch karte hain
+  const { authUser } = useAuth(); // Use destructuring here
 
   return (
     <div className="dark:bg-slate-900 dark:text-white min-h-screen">
