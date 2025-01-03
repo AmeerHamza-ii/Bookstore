@@ -1,29 +1,33 @@
-import Home from "./home/Home";
 import { Navigate, Route, Routes } from "react-router-dom";
+import Home from "./home/Home";
 import Courses from "./courses/Courses";
 import Signup from "./components/Signup";
+import ContactUs from "./components/Email/Email";
 import { Toaster } from "react-hot-toast";
 import { useAuth } from "./context/AuthProvider";
-import ContactUs from "./components/Email/Email";
 
 function App() {
-  const [authUser, setAuthUser] = useAuth();
-  console.log(authUser);
+  const [authUser] = useAuth(); // authUser ko context se fetch karte hain
+
   return (
-    <>
-      <div className="dark:bg-slate-900 dark:text-white">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route
-            path="/course"
-            element={authUser ? <Courses /> : <Navigate to="/signup" />}
-          />
-          <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/signup" element={<Signup />} />
-        </Routes>
-        <Toaster />
-      </div>
-    </>
+    <div className="dark:bg-slate-900 dark:text-white min-h-screen">
+      {/* Routes Configuration */}
+      <Routes>
+        {/* Public Routes */}
+        <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/contactus" element={<ContactUs />} />
+
+        {/* Protected Routes */}
+        <Route
+          path="/course"
+          element={authUser ? <Courses /> : <Navigate to="/signup" />}
+        />
+      </Routes>
+
+      {/* Toast Notifications */}
+      <Toaster position="top-center" />
+    </div>
   );
 }
 
