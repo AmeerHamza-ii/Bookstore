@@ -15,14 +15,14 @@ function App() {
       <Routes>
         {/* Public Routes */}
         <Route path="/" element={<Home />} />
-        <Route path="/hax" element={<Courses />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/contactus" element={<ContactUs />} />
 
         {/* Protected Routes */}
-        {/* <Route
-          path="/book" element={authUser ? <Courses /> : <Navigate to="/signup" />}
-        />*/}
+        <Route
+          path="/book"
+          element={authUser ? <Courses /> : <Navigate to="/signup" />}
+        />
       </Routes>
 
       {/* Toast Notifications */}
