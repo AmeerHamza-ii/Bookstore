@@ -5,7 +5,6 @@ import Signup from "./components/Signup";
 import ContactUs from "./components/Email/Email";
 import { Toaster } from "react-hot-toast";
 import { useAuth } from "./context/AuthProvider";
-import Course from "./components/Course";
 
 function App() {
   const { authUser } = useAuth(); // Use destructuring here
@@ -22,7 +21,7 @@ function App() {
         {/* Protected Routes */}
         <Route
           path="/book"
-          element={authUser ? <Course /> : <Navigate to="/signup" />}
+          element={authUser ? <Courses /> : <Navigate to="/signup" />}
         />
       </Routes>
 
