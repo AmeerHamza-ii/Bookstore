@@ -20,7 +20,7 @@ function App() {
 
         {/* Protected Routes */}
         <Route
-          path="/book"
+          path="/course"
           element={authUser ? <Courses /> : <Navigate to="/signup" />}
         />
       </Routes>
